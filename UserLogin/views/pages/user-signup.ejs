@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Signup</h1>
+        <br />
+        <form action="/signup" method="post">
+            Email: <input type="text" name="email" required/>
+            Password: <input type="password" name="password" required/>
+            <input type="submit" value="Submit" />
+        </form>
+        <%if (typeof error !== 'undefined') { %>
+            <p style="color:red"><%= error %></p>
+        <% } %>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
