@@ -6,6 +6,6 @@ There are four pages: home, login, signup, dashboard. If the user is signed in, 
 
 This was implemented using express sessions. Each visiting user is issued a cookie in which sessionId is saved, and it is used for mapping the user to their session data. Session data is stored in mongoDB database. 
 
-Whenever some user logs in, that information is saved in their session data, so that each subsequent request to the dashboard page will be granted because the user is logged in. 
+Whenever some user logs in, that information is saved in their session data. Now, each subsequent request to the dashboard page, in the next 60 seconds, will go through because the user is logged in. 
 
 Sessions are saved for 60 seconds, meaning that the user can be logged in only for 60 seconds.
