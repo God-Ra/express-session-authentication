@@ -9,3 +9,7 @@ This was implemented using express sessions. Each visiting user is issued a cook
 Whenever some user logs in, that information is saved in their session data. Afterwards, if in the next 60 seconds the user sends a request to the dashboard page, the request will go through because the user is logged in.
 
 Sessions are saved for 60 seconds, meaning that the user is automatically logged in only for the next 60 seconds.
+
+![alt text](https://raw.githubusercontent.com/God-Ra/express-session-authentication/master/login.png?raw=true)
+
+![alt text](https://raw.githubusercontent.com/God-Ra/express-session-authentication/master/dashboard.png?raw=true)
